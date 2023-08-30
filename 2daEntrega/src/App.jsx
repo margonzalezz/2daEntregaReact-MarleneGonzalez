@@ -1,14 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import ItemDetailContainer from "./components/ItemDetail";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return(
     <div>
-      {/* <Navbar/> */}
     <Navbar></Navbar>
-    {/* <ItemListContainer greeting="Hola mundo! :)"/> */}
 
     <Routes>
       <Route path="/" element={<ItemListContainer />}></Route>
