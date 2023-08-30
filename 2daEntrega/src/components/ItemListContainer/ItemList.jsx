@@ -3,8 +3,7 @@ import propTypes from "prop-types";
 
 const ItemList = ({ items }) => {
     return ( 
-        <div>
-            <h1>ItemList</h1>
+        <div >
             <ul>
                 {items.map((item) => (
                     <li key={item.id}>
@@ -17,10 +16,8 @@ const ItemList = ({ items }) => {
         </div>
     )
 }
-
 ItemList.propTypes = {
     items : propTypes.array.isRequired,
 }
-
 
 export default ItemList;
